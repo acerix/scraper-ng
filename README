@@ -1,0 +1,30 @@
+	
+ABOUT
+	
+	scraper-ng for php
+
+	- reads a scrape file from a torrent tracker, and update a local database with the results
+	
+	- based on the new scrape format used by publicbt.com (bencoded scrapes are not supported)
+	
+	- visit https://github.com/acerix/scraper-ng for updates
+	
+
+USAGE
+
+	- create a new database and import tables.sql
+
+	- edit conf.php, inserting the credentials for the new database
+	
+	- start scrape.php
+	
+		from a browser:		http://myhost/scraper-ng/scraper.php
+		
+		from a shell:		php scraper.php
+
+
+
+CUSTOM USAGE
+
+	- modify scraper.php to update your existing database
+	
