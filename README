@@ -7,9 +7,6 @@ ABOUT
 	
 	- based on the new scrape format used by publicbt.com (bencoded scrapes are not supported)
 	
-	- visit https://github.com/acerix/scraper-ng for updates
-	
-
 USAGE
 
 	- create a new database and import tables.sql
