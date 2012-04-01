@@ -7,7 +7,7 @@ echo PHP_EOL.$scraper_conf['version'].PHP_EOL;
 
 $request_start = microtime(1);
 
-if (in_array($scraper_conf['mode'],['INSERT','UPDATE'])) {
+if (in_array($scraper_conf['mode'],array('INSERT','UPDATE'))) {
 	if ($scraper_conf['v'])
 		echo "connecting to database (".$scraper_conf['db_dsn'].")...";
 	try {
@@ -88,12 +88,12 @@ while ($line = fgets($fh)) {
 		echo '.';
 	
 	if ($st)
-	$st->execute([
+	$st->execute(array(
 		$t[1]
 		,$t[2]
 //		,urldecode($t[0])	// gives errors in postgres (not escaped properly?)
 		,current(unpack('H*',urldecode($t[0]))) 	// encoding in HEX works better
-	]);
+	));
 	
 	
 	if ($scraper_conf['v']>1 && $n%10000==0) {
@@ -112,3 +112,4 @@ if ($scraper_conf['v'])
 
 if ($scraper_conf['v'])
 	echo "scraped $n torrents in ".round($scrape_time)." seconds (".round($n/$scrape_time,2)." t/s)".PHP_EOL.PHP_EOL;
+

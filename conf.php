@@ -1,6 +1,6 @@
 <?php
 
-$scraper_conf = [];
+$scraper_conf = array();
 
 // Location of scrape file to download
 $scraper_conf['uri']		=	'compress.bzip2://http://publicbt.com/all.txt.bz2';
