@@ -16,7 +16,7 @@ USAGE
 
 	- edit conf.php, inserting the credentials for the new database
 	
-	- start scrape.php
+	- start scraper.php
 	
 		from a browser:		http://myhost/scraper-ng/scraper.php
 		
